@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-bg-color: #edeced;
+}
+
+body {
+    font-family: "Old Standard TT", serif;
+    font-size: 1rem;
+}
+
+.arrow-firstpage {
+    height: 4rem;
+    margin-top: 15rem;
+    text-align: center;
+    animation: bounce 1.7s infinite linear;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-1rem);
+    }
+}
+
+.chevron {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin-top: 20rem;
+    letter-spacing: 3px;
+
+}
+
+.first-page-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-bg-color);
+}
+
+.choice-container {
+    display: flex;
+    flex-direction: row;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.woman-choice > img, .man-choice > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.woman-choice {
+    width: 50%;
+    position: relative;
+}
+
+.man-choice {
+    width: 50%;
+    position: relative;
+}
+
+.woman-choice-button, .man-choice-button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    align-content: center;
+}
+
+.woman-choice-button-style, .man-choice-button-style {
+    display: inline-block;
+    color: var(--main-bg-color);
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--main-bg-color);
+    text-align: center;
+}
+
+.woman-choice-button-style:hover, .man-choice-button-style:hover {
+    opacity: 70%;
+    transition: 0.3s;
+    transform: scale(1.1)
+}
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woman Section</title>
+    <link rel="stylesheet" href="woman.css"/>
+    <link rel="icon" href="assets/img/WP logo.png" type="image"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+
+<div class="header-container">
+    <nav class="navbar">
+        <div class="navdiv">
+
+            <div class="dropdown">
+                <button class="dropbtn">Wool Project</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home page</a>
+                    <a href="woman.html">Woman</a>
+                    <a href="man.html">Man</a>
+                </div>
+            </div>
+
+
+            <ul class="nav-ul">
+                <li class="button-value" onclick="filterProducts('sweaters', 'woman')"><a>sweatears</a></li>
+                <li>|</li>
+                <li class="button-value" onclick="filterProducts('pants', 'woman')"><a>pants</a></li>
+                <li>|</li>
+                <li class="button-value" onclick="filterProducts('coats', 'woman')"><a>coats</a></li>
+                <li>|</li>
+                <li class="button-value" onclick="filterProducts('bags', 'woman')"><a>bags</a></li>
+                <li>|</li>
+                <li class="button-value" onclick="filterProducts('shoes', 'woman')"><a>shoes</a></li>
+            </ul>
+            <div>
+                <img src="./assets/img/shopping-bag.png" class="cart-icon"/>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <hr>
+
+
+</div>
+<!-- MAIN CONTAINER -->
+<div class="products-container">
+    <!-- PRODUCT CONTAINER -->
+    <div id="products-container-to-show" class="products-card-container"></div>
+</div>
+
+<div class="hr-div"></div>
+<hr class="hr-footer">
+
+
+<!--footer goes here-->
+<footer>
+
+    <div class="footer-width">
+
+        <div class="footer-text">
+            <h2>Get Support</h2>
+            <p><b>Email</b>: <a class="footer-email" href="mailto:support@woolproject.com">support@woolproject.com</a></p>
+            <p><b>Telephone</b>: <a class="footer-telephone" href="tel:(555)555-1234">(555) 555-1234</a></p>
+            <p>Or visit our <a class="footer-link">FAQ</a></p>
+        </div>
+
+        <div class="footer-text">
+            <h2>General information</h2>
+            <p><a class="footer-link" href="./assets/pdfs/sample-terms-conditions-agreement.pdf" target="_blank">Legal documents</a></p>
+            <p><a class="footer-link" href="./assets/pdfs/sample-cookies-policy-template.pdf" target="_blank">Cookie Policy</a></p>
+            <p><a class="footer-link" href="./assets/pdfs/sample-disclaimer-template.pdf" target="_blank">Disclaimer</a></p>
+        </div>
+
+        <div class="footer-text">
+            <h2>Follow us on</h2>
+            <p>Instagram</p>
+            <p>Twitter</p>
+            <p>Facebook</p>
+        </div>
+
+    </div>
+
+    <div class="hr-div"></div>
+    <hr>
+    <div class="footer-last-width"><p class="vat-num">2025 © Wool Project SpA Vat 00000000000</p></div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
