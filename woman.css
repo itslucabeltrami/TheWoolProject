@@ -296,3 +296,21 @@ p {
     padding-top: 0.5rem;
     font-style: italic;
 }
+
+.socials-logo {
+    display: flex;
+    flex-direction: row;
+    max-height: 1.5rem;
+    cursor: pointer;
+}
+
+.socials-logo:hover {
+    max-height: 1.7rem;
+    transition-duration: 0.2s;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
