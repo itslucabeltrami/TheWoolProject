@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="icon" href="assets/img/WP logo.png" type="image"/>
+    <link rel="stylesheet" href="faq.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
+
+
+
+
+</head>
+<body>
+
+
+<div class="header-container">
+    <nav class="navbar">
+        <div class="navdiv">
+
+            <div class="dropdown">
+                <button class="dropbtn">Wool Project</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home page</a>
+                    <a href="woman.html">Woman</a>
+                    <a href="man.html">Man</a>
+                </div>
+            </div>
+
+
+            <ul class="nav-ul">
+                <li class="button-value"><a href="woman.html" class="button-value">WOMAN</a></li>
+                <li>|</li>
+                <li class="button-value"><a href="man.html" class="button-value">MAN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr>
+
+
+<div class="main-container">
+   <!-- <div class="side-bar-faq"></div> -->
+
+    <div class="faq">
+        <div class="title-tab"><i class="fa fa-1x"></i>What is Wool Project?</div>
+        <div class="content-tab">Wool Project is a fictional brand conceived by Luca Beltrami. It does not exist in reality and does not provide any services of any kind. This project was created solely for the purpose of learning web development and is intended for inclusion in Luca's personal portfolio. Luca Beltrami does not own any of the images used in this project.</div>
+        <div class="title-tab"><i class="fa fa-1x"></i>How do I find a product?</div>
+        <div class="content-tab">To find a product on Wool Project, you can explore the Women's and Men's sections, browsing through the available items. Alternatively, you can use the navigation buttons in the header of the page to filter products by category, such as shoes or sweaters, making it easier to find exactly what you're looking for.</div>
+        <div class="title-tab"><i class="fa fa-1x"></i>How do I buy a product?</div>
+        <div class="content-tab">To shop for an item on Wool Project, start by browsing the website and selecting the product you want. Click the "Add to Cart" button to place it in your basket. Once you're ready to proceed, open your shopping cart, where you can review your selected items and adjust the quantity if needed. When you're satisfied with your selection, click the "Buy Now" button to proceed to the payment page and complete your purchase. Please note that Wool Project is a fictional brand and does not sell real products.</div>
+        <div class="title-tab"><i class="fa fa-1x"></i>How do I know if an item is available in my size?</div>
+        <div class="content-tab">On each product page, you can find a selection of available sizes. Simply click on the size options to check availability. If a size is out of stock, it will either be grayed out or marked as unavailable. Since Wool Project is a fictional brand, the items displayed are for demonstration purposes only.</div>
+        <div class="title-tab"><i class="fa fa-1x"></i>Can I track my order after purchasing?</div>
+        <div class="content-tab">Wool Project is a fictional brand and does not process real orders. However, on a real e-commerce website, you would typically receive a confirmation email with a tracking link after completing a purchase, allowing you to monitor the delivery status of your order.</div>
+    </div>
+</div>
+
+   <!-- <div class="hr-div"></div> -->
+    <hr class="hr-footer">
+
+
+    <footer>
+
+        <div class="footer-width">
+
+            <div class="footer-text">
+                <h2>Get Support</h2>
+                <p><b>Email</b>: <a class="footer-email" href="mailto:support@woolproject.com">support@woolproject.com</a>
+                </p>
+                <p><b>Telephone</b>: <a class="footer-telephone" href="tel:(555)555-1234">(555) 555-1234</a></p>
+                <p>Or visit our <a href="faq.html" class="footer-link" >FAQ</a></p>
+            </div>
+
+            <div class="footer-text">
+                <h2>General information</h2>
+                <p><a class="footer-link" href="./assets/pdfs/sample-terms-conditions-agreement.pdf" target="_blank">Legal
+                    documents</a></p>
+                <p><a class="footer-link" href="./assets/pdfs/sample-cookies-policy-template.pdf" target="_blank">Cookie
+                    Policy</a></p>
+                <p><a class="footer-link" href="./assets/pdfs/sample-disclaimer-template.pdf" target="_blank">Disclaimer</a>
+                </p>
+            </div>
+
+            <div class="footer-text">
+                <h2>Follow us on</h2>
+                <div class="icons-container">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/Instagram_Symbol_1.png"
+                                                                              class="socials-logo"></a>
+                    <a href="https://www.x.com/" target="_blank"><img src="./assets/img/X_idJxGuURW1_1.png"
+                                                                      class="socials-logo"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/Facebook_Symbol_1.png"
+                                                                             class="socials-logo"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hr-div"></div>
+        <hr>
+        <div class="footer-last-width"><p class="vat-num">2025 © Wool Project SpA Vat 00000000000</p></div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".content-tab:not(:eq(0))").toggle();
+        $(".title-tab i").toggleClass("fa-plus");
+
+        $(".title-tab").click(function(){
+            $(".content-tab").hide();
+            $(".title-tab i").removeClass("fa-minus");
+            $(".title-tab i").addClass("fa-plus");
+            $(this).next().show();
+            $(this).children().addClass("fa-minus");
+        })
+    })
+
+</script>
+
+
+</body>
+</html>
