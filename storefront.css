@@ -103,6 +103,7 @@ li {
     max-height: 35px;
     max-height: 35px;
     padding-right: 12px;
+    cursor: pointer;
 }
 
 
@@ -113,7 +114,6 @@ li {
 .products-card-container {
     width: 1160px;
     margin: auto;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -142,6 +142,8 @@ li {
     border: 0.5px solid black;
     mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);
 }
+
+
 
 .product-name-style{
     font-family: Schibsted Grotesk, serif;
@@ -314,3 +316,208 @@ p {
     flex-direction: row;
     justify-content: space-around;
 }
+
+
+
+/*cart content*/
+
+.logo-cart-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+.logo-shopping-cart {
+    text-decoration: none;
+    color: black;
+    border: none;
+    font-family: "Old Standard TT", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right:-100%;
+    width: 360px;
+    height: 100%;
+    background: var(--main-bg-color);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px 40px;
+    z-index: 100;
+    overflow: auto;
+    transition: 0.25s ease-in-out;
+    border-left: 1px black solid;
+}
+
+.cart.active {
+    right:0;
+}
+
+.cart-title {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    font-family: "Old Standard TT", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.cart-box {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right:20px;
+}
+
+.cart-detail {
+    display: grid;
+    gap: 8px;
+    margin-right: auto;
+}
+
+h2.cart-product-title {
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    font-family: "Schibsted Grotesk", serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+
+}
+
+.cart-price {
+    font-weight: 500;
+    text-style: italic;
+}
+
+.cart-quantity {
+    display: flex;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.cart-quantity button {
+    background: transparent;
+    width: 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart-quantity #decrement {
+    color: black;
+}
+
+#decrement:hover, #increment:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.cart-quantity .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    cursor: default;
+}
+
+.cart-remove {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cart-remove:hover {
+    background-image: url('./assets/img/delete-bin-7-fill.png');
+    transition-duration: 0.2s;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    margin-top: 50px;
+    font-size:18px;
+}
+
+.total-title {
+    font-family: Schibsted Grotesk, serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    color: black;
+    text-align: end;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+}
+
+.total-price {
+    margin-left: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.btn-buy {
+    display: block;
+    padding: 10px 30px;
+    background: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px auto 0;
+    width: 60%;
+}
+
+.btn-buy:hover {
+    transform: scale(105%);
+    transition-duration: 0.2s;
+}
+
+.buy-now-link {
+    text-decoration: none;
+    color: white;
+}
+
+.cart-close-button {
+    display: block;
+    padding: 10px 30px;
+    background: var(--main-bg-color);
+    border: 1px black solid;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px auto 0;
+    width: 60%;
+}
+
+.cart-close-button:hover {
+    transform: scale(105%);
+    transition-duration: 0.2s;
+}
+
+
+
+
