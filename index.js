@@ -201,12 +201,16 @@ function showAll(type) {
 const cartIcon = $("#cart-button-action");
 const cart = $('.cart');
 const cartCLose = $('.cart-close-button');
+const cartCloseArrow = $('.cart-close-arrow-button');
 
 //opening and closing
 cartIcon.on('click', function () {
     cart.addClass('active')
 });
 cartCLose.on('click', function () {
+    cart.removeClass('active')
+});
+cartCloseArrow.on('click', function () {
     cart.removeClass('active')
 });
 

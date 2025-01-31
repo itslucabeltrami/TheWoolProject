@@ -444,11 +444,13 @@ h2.cart-product-title {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    cursor: pointer;
 }
 
 .cart-remove:hover {
     background-image: url('./assets/img/delete-bin-7-fill.png');
     transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 .total {
@@ -518,6 +520,22 @@ h2.cart-product-title {
     transition-duration: 0.2s;
 }
 
+.cart-close-arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--main-bg-color);
+}
 
+.cart-close-arrow-button:hover {
+    cursor: pointer;
+    transform: scale(120%);
+    transition-duration: 0.2s;
+
+}
 
 
