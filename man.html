@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Man Section</title>
+    <title>Woman Section</title>
     <link rel="stylesheet" href="storefront.css"/>
     <link rel="icon" href="assets/img/WP logo.png" type="image"/>
 
@@ -30,6 +30,8 @@
 
 
             <ul class="nav-ul">
+                <li class="button-value"><a href="man.html" class="all-button">ALL</a></li>
+                <li>|</li>
                 <li class="button-value" onclick="filterProducts('blazers', 'man')"><a>blazers</a></li>
                 <li>|</li>
                 <li class="button-value" onclick="filterProducts('pants', 'man')"><a>pants</a></li>
@@ -39,8 +41,9 @@
                 <li class="button-value" onclick="filterProducts('accessories', 'man')"><a>accessories</a></li>
                 <li>|</li>
                 <li class="button-value" onclick="filterProducts('shoes', 'man')"><a>shoes</a></li>
+
             </ul>
-            <div>
+            <div id="cart-button-action">
                 <img src="./assets/img/shopping-bag.png" class="cart-icon"/>
             </div>
 
@@ -50,6 +53,20 @@
 
     <hr>
 
+    <div id="cart-content-container" class="cart">
+        <button class="cart-close-arrow-button"><img src="./assets/img/close-line.png"/></button>
+        <div class="logo-cart-container"><h3 class="logo-shopping-cart">Wool Project</h3></div>
+        <h2 class="cart-title">shopping cart</h2>
+        <div id="cart-content-box" class="cart-content"></div>
+        <!--js goes here-->
+        <div class="total">
+            <div class="total-title">total:</div>
+            <div id="cart-content-price-counter" class="total-price">0,00€</div>
+        </div>
+        <button class="btn-buy"><a class="buy-now-link" href="shoppingCart.html" target="_blank">Buy now</a></button>
+        <button class="cart-close-button">Continue shopping</button>
+
+    </div>
 
 </div>
 <!-- MAIN CONTAINER -->
@@ -69,24 +86,31 @@
 
         <div class="footer-text">
             <h2>Get Support</h2>
-            <p><b>Email</b>: <a class="footer-email" href="mailto:support@woolproject.com">support@woolproject.com</a></p>
+            <p><b>Email</b>: <a class="footer-email" href="mailto:support@woolproject.com">support@woolproject.com</a>
+            </p>
             <p><b>Telephone</b>: <a class="footer-telephone" href="tel:(555)555-1234">(555) 555-1234</a></p>
-            <p>Or visit our <a class="footer-link">FAQ</a></p>
+            <p>Or visit our <a href="faq.html" class="footer-link" target="_blank">FAQ</a></p>
         </div>
 
         <div class="footer-text">
             <h2>General information</h2>
-            <p><a class="footer-link" href="./assets/pdfs/sample-terms-conditions-agreement.pdf" target="_blank">Legal documents</a></p>
-            <p><a class="footer-link" href="./assets/pdfs/sample-cookies-policy-template.pdf" target="_blank">Cookie Policy</a></p>
-            <p><a class="footer-link" href="./assets/pdfs/sample-disclaimer-template.pdf" target="_blank">Disclaimer</a></p>
+            <p><a class="footer-link" href="./assets/pdfs/sample-terms-conditions-agreement.pdf" target="_blank">Legal
+                documents</a></p>
+            <p><a class="footer-link" href="./assets/pdfs/sample-cookies-policy-template.pdf" target="_blank">Cookie
+                Policy</a></p>
+            <p><a class="footer-link" href="./assets/pdfs/sample-disclaimer-template.pdf" target="_blank">Disclaimer</a>
+            </p>
         </div>
 
         <div class="footer-text">
             <h2>Follow us on</h2>
             <div class="icons-container">
-                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/Instagram_Symbol_1.png" class="socials-logo"></a>
-                <a href="https://www.x.com/" target="_blank"><img src="./assets/img/X_idJxGuURW1_1.png" class="socials-logo"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/Facebook_Symbol_1.png" class="socials-logo"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/Instagram_Symbol_1.png"
+                                                                          class="socials-logo"></a>
+                <a href="https://www.x.com/" target="_blank"><img src="./assets/img/X_idJxGuURW1_1.png"
+                                                                  class="socials-logo"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/Facebook_Symbol_1.png"
+                                                                         class="socials-logo"></a>
             </div>
         </div>
 

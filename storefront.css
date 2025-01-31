@@ -185,6 +185,11 @@ li {
     cursor: pointer;
 }
 
+.all-button {
+    text-decoration: none;
+    color: black;
+}
+
 footer {
     background-color: var(--main-bg-color);
     position: relative;
