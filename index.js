@@ -107,6 +107,25 @@ const products = [
 let cartProductsToBuy = []
 
 
+
+let toTop = $('#to-top-btn');
+
+$(document).on('scroll', function(){ scrollFunction() })
+
+function scrollFunction() {
+    if (document.documentElement.scrollTop > 20) {
+        toTop.fadeIn(500);
+    } else {
+        toTop.fadeOut(300);
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome
+}
+
+
 let toPrint = '';
 const productsContainer = $('#products-container-to-show');
 const page = $(location).prop('href').split('/');
@@ -277,7 +296,6 @@ function addToCart(product) {
     cartContentPrice.text("")
     cartContentPrice.append(cartToBuyTotalPrice.toFixed(2).toString().replace('.', ',')+'€')
 
-
     // updateTotalPrice();
 };
 
@@ -303,10 +321,10 @@ function cartItemActionQuantity(type, id) {
 
 
 function addToCartExample(id) {
-    console.log('id', id);
-
     const productToAddToCart = products.find((product) => product.id === id);
-    console.log(productToAddToCart);
     addToCart(productToAddToCart)
 };
+
+
+// go to top button
 
