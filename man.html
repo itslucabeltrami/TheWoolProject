@@ -6,12 +6,11 @@
     <title>Man Section</title>
     <link rel="stylesheet" href="storefront.css"/>
     <link rel="icon" href="assets/img/WP logo.png" type="image"/>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
           rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 
@@ -43,8 +42,11 @@
                 <li class="button-value" onclick="filterProducts('shoes', 'man')"><a>shoes</a></li>
 
             </ul>
-            <div id="cart-button-action">
+            <div class="cart-button-container" id="cart-button-action">
                 <img src="./assets/img/shopping-bag.png" class="cart-icon"/>
+                <div class="counter" id="cart-counter">
+                    0
+                </div>
             </div>
 
         </div>
@@ -53,19 +55,22 @@
 
     <hr>
 
-    <div id="cart-content-container" class="cart">
-        <button class="cart-close-arrow-button"><img src="./assets/img/close-line.png"/></button>
-        <div class="logo-cart-container"><h3 class="logo-shopping-cart">Wool Project</h3></div>
-        <h2 class="cart-title">shopping cart</h2>
-        <div id="cart-content-box" class="cart-content"></div>
-        <!--js goes here-->
-        <div class="total">
-            <div class="total-title">total:</div>
-            <div id="cart-content-price-counter" class="total-price">0,00€</div>
-        </div>
-        <button class="btn-buy"><a class="buy-now-link" href="shoppingCart.html" target="_blank">Buy now</a></button>
-        <button class="cart-close-button">Continue shopping</button>
+    <div>
+        <div class="cart-content-side-menu"></div>
+        <div id="cart-content-container" class="cart">
+            <button class="cart-close-arrow-button"><img src="./assets/img/close-line.png"/></button>
+            <div class="logo-cart-container"><h3 class="logo-shopping-cart">Wool Project</h3></div>
+            <h2 class="cart-title">shopping cart</h2>
+            <div id="cart-content-box" class="cart-content"></div>
+            <!--js goes here-->
+            <div class="total">
+                <div class="total-title">total:</div>
+                <div id="cart-content-price-counter" class="total-price">0,00€</div>
+            </div>
+            <a class="buy-now-link" href="shoppingCart.html" target="_blank"><button class="btn-buy">Buy now</button></a>
+            <button class="cart-close-button">Continue shopping</button>
 
+        </div>
     </div>
 
     <button onclick="topFunction()" id="to-top-btn" title="Go to top"><img src="./assets/img/skip-up-line.png" class="img-top"/></button>
@@ -125,7 +130,7 @@
 
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="index.js"></script>
+<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
 </body>
 </html>

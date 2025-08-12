@@ -2,9 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-</head>
-<body>
+    <link rel="stylesheet" href="finalcart.css"/>
+    <link rel="icon" href="assets/img/WP logo.png" type="image"/>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+<header class="shop-header">
+<div class="dropdown">
+    <button class="dropbtn">Wool Project</button>
+    <div class="dropdown-content">
+        <a href="index.html">Home page</a>
+        <a href="woman.html">Woman</a>
+        <a href="man.html">Man</a>
+    </div>
+</div>
+</header>
+
+<hr>
+
+<div>
+    <h2 class="cart-title" >shopping cart</h2>
+    <div id="cart-content-box" class="cart-content" ></div>
+    <!--js goes here-->
+    <div class="total">
+        <div class="total-title" >total:</div>
+        <div id="cart-content-price-counter" class="total-price">0,00€</div>
+    </div>
+    <button class="btn-buy"><a class="buy-now-link" onclick="continueAlert()">CONTINUE</a></button>
+    <button class="cart-close-button" ><a href="woman.html" target="_blank" style="text-decoration: none; color:black">GO BACK</a></button>
+</div>
+
+<div class="hr-div"></div>
+<hr class="hr-footer">
+
+<footer>
+    <div class="footer-width">
+        <div class="footer-text">
+            <h2>Get Support</h2>
+            <p><b>Email</b>: <a class="footer-email" href="mailto:support@woolproject.com">support@woolproject.com</a>
+            </p>
+            <p><b>Telephone</b>: <a class="footer-telephone" href="tel:(555)555-1234">(555) 555-1234</a></p>
+            <p>Or visit our <a href="faq.html" class="footer-link" target="_blank">FAQ</a></p>
+        </div>
+
+        <div class="footer-text">
+            <h2>General information</h2>
+            <p><a class="footer-link" href="./assets/pdfs/sample-terms-conditions-agreement.pdf" target="_blank">Legal
+                documents</a></p>
+            <p><a class="footer-link" href="./assets/pdfs/sample-cookies-policy-template.pdf" target="_blank">Cookie
+                Policy</a></p>
+            <p><a class="footer-link" href="./assets/pdfs/sample-disclaimer-template.pdf" target="_blank">Disclaimer</a>
+            </p>
+        </div>
+
+        <div class="footer-text">
+            <h2>Follow us on</h2>
+            <div class="icons-container">
+                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/Instagram_Symbol_1.png"
+                                                                          class="socials-logo"></a>
+                <a href="https://www.x.com/" target="_blank"><img src="./assets/img/X_idJxGuURW1_1.png"
+                                                                  class="socials-logo"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/Facebook_Symbol_1.png"
+                                                                         class="socials-logo"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hr-div"></div>
+    <hr>
+    <div class="footer-last-width"><p class="vat-num">2025 © Wool Project SpA Vat 00000000000</p></div>
+
+</footer>
+
+
+<script src="index.js"></script>
 </body>
 </html>

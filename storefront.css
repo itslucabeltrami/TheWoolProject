@@ -106,11 +106,31 @@ li {
     cursor: pointer;
 }
 
+.cart-button-container {
+    position: relative;
+}
+
+.counter {
+    display: none;
+    background: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    font-size: 11px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    font-family: Schibsted Grotesk, serif;
+}
 
 .products-container {
     min-height: 100vh;
     background-color: var(--main-bg-color);
 }
+
 .products-card-container {
     width: 1160px;
     margin: auto;
@@ -143,8 +163,6 @@ li {
     mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);
 }
 
-
-
 .product-name-style{
     font-family: Schibsted Grotesk, serif;
     text-align: right;
@@ -153,6 +171,7 @@ li {
     padding-bottom: 0.5rem;
     font-size: 1.2rem;
 }
+
 .product-price-style {
     font-family: Schibsted Grotesk, serif;
     font-style: italic;
@@ -207,7 +226,7 @@ footer {
 }
 
 hr {
-    width: 100%;
+    width: auto;
 }
 
 .footer-width {
@@ -323,7 +342,6 @@ p {
 }
 
 
-
 /*cart content*/
 
 .logo-cart-container {
@@ -354,10 +372,20 @@ p {
     background: var(--main-bg-color);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     padding: 40px 20px 40px;
-    z-index: 100;
+    z-index: 999;
     overflow: auto;
-    transition: 0.25s ease-in-out;
+    transition: 0.35s ease;
     border-left: 1px black solid;
+}
+
+.cart-content-side-menu {
+    background: rgba(0, 0, 0, 0.35);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: none;
 }
 
 .cart.active {
@@ -560,4 +588,24 @@ h2.cart-product-title {
 #to-top-btn:hover {
     transform: scale(1.2);
     transition-duration: 0.2s;
+}
+
+.shop-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    height: 4rem;
+
+}
+
+
+.shopping-cart-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
