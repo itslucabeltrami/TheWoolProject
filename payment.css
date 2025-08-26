@@ -1,0 +1,207 @@
+body {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    /*background-color: #f8f9fa;*/
+    background-color: #edeced;
+    margin: 0;
+    padding: 0;
+}
+
+.payment-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.payment-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.half-width {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.method-card {
+    margin-bottom: 0.5rem;
+}
+
+.card-header.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.button.light {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.button.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.button.full-width {
+    width: 100%;
+}
+
+.button.text-left {
+    text-align: left;
+}
+
+.button.collapsed {
+    background-color: #fff;
+}
+
+.padded {
+    padding: 1rem;
+}
+
+.border-bottom-custom {
+    border-bottom: 1px solid #ddd;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-top {
+    margin-top: 0.25rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.input-group i {
+    color: #6c757d;
+}
+
+.spaced {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-muted {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline black solid;
+    transition-duration: 0.2s;
+    font-weight: 600;
+}
+
+.text-link {
+    font-family: Schibsted Grotesk, serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.line {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.super-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.super-month {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.small-gap {
+    margin-bottom: 0.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.billing {
+    color: #007bff;
+    font-size: 0.875rem;
+}
+
+.free-button {
+    margin-bottom: 1rem;
+}
+
+.icons img {
+    margin-left: 0.25rem;
+}
+
+.subtitle {
+    font-family: Schibsted Grotesk, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 0.8rem;
+}
+
+.text, .label-text {
+    font-family: Schibsted Grotesk, serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
