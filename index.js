@@ -156,13 +156,14 @@ function initApp() {
     const cartContentPrice = $('#cart-content-price-counter');
 
     cartContent.text("");
-    cartProductsToBuy.forEach((element) => {
-        const priceCounted = parseFloat(element.price.replace(',', '.')) * element.count;
-        cartToBuyTotalPrice += priceCounted;
+    if (cartToBuyTotalPrice) {
+        cartProductsToBuy.forEach((element) => {
+            const priceCounted = parseFloat(element.price.replace(',', '.')) * element.count;
+            cartToBuyTotalPrice += priceCounted;
 
-        let toPrintVar = cartToBuyElements;
+            let toPrintVar = cartToBuyElements;
 
-        toPrintVar += `
+            toPrintVar += `
             <div class="cart-box" data-id="${element.id}">
                 <img src="./assets/img/${element.image}" class="cart-img">
                 <div class="cart-detail">
@@ -179,8 +180,9 @@ function initApp() {
                 </div>
             </div>
         `;
-        cartContent.append(toPrintVar);
-    })
+            cartContent.append(toPrintVar);
+        })
+    }
 
     cartContentPrice.text("")
     cartContentPrice.append(cartToBuyTotalPrice.toFixed(2).toString().replace('.', ',')+'€')
