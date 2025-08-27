@@ -104,7 +104,7 @@ const products = [
 
 ];
 
-let cartProductsToBuy = []
+let cartProductsToBuy = [];
 
 let toTop = $('#to-top-btn');
 
@@ -148,7 +148,9 @@ $(document).ready(() => {
 
 // INIT APP
 function initApp() {
-    cartProductsToBuy = JSON.parse(localStorage.getItem('cart-products'));
+    if (JSON.parse(localStorage.getItem('cart-products'))) {
+        cartProductsToBuy = JSON.parse(localStorage.getItem('cart-products'));
+    }
 
     const cartToBuyElements = ''
     let cartToBuyTotalPrice = 0
@@ -156,8 +158,7 @@ function initApp() {
     const cartContentPrice = $('#cart-content-price-counter');
 
     cartContent.text("");
-    if (cartToBuyTotalPrice) {
-        cartProductsToBuy.forEach((element) => {
+    cartProductsToBuy.forEach((element) => {
             const priceCounted = parseFloat(element.price.replace(',', '.')) * element.count;
             cartToBuyTotalPrice += priceCounted;
 
@@ -182,7 +183,6 @@ function initApp() {
         `;
             cartContent.append(toPrintVar);
         })
-    }
 
     cartContentPrice.text("")
     cartContentPrice.append(cartToBuyTotalPrice.toFixed(2).toString().replace('.', ',')+'€')
